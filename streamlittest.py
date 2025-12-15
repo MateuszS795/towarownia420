@@ -94,7 +94,7 @@ def main():
             if st.button("Usuń Wybrany Towar", key='delete_button'):
                 delete_item(id_to_delete)
                 # Ponowne uruchomienie aplikacji jest kluczowe, aby poprawnie odświeżyć stan (np. puste listy)
-                st.experimental_rerun()
+                st.rerun()
         else:
             st.info("Brak towarów do usunięcia.")
 
